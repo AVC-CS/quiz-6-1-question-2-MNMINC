@@ -53,5 +53,5 @@ int readFile(string fileName)
 		cout << id << " " << name << " " << job << " " << salery << endl;
 	}
 
-    return N;
+    return --N;
 }
