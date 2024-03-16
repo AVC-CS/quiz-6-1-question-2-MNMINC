@@ -44,7 +44,7 @@ int readFile(string fileName)
 	//ifs >> N; 
 
 
-	for (N = 0; ifs.eof(); ++N)
+	for (N = 0; !ifs.eof(); ++N)
 	{
 		string name, job;
 		int id;
