@@ -14,8 +14,8 @@ int writeFile(string fileName)
     }
 
     int N;
-    //cin >> N;
-    ofs << N << endl;
+    cin >> N;
+    //ofs << N << endl;
 	for (int i = 0; i < N; ++i)
 	{
 		int id;
