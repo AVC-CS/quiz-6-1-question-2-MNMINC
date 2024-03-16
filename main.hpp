@@ -2,11 +2,11 @@
 #include <fstream>
 using namespace std;
 
-int writeFile()
+int writeFile(string fileName)
 {
     ofstream ofs;
 
-    ofs.open("employee.txt");
+    ofs.open(fileName + ".txt");
     if (!ofs)
     {
         cout << "File Open Error\n";
@@ -29,11 +29,11 @@ int writeFile()
 
     return N;
 }
-int readFile()
+int readFile(string fileName)
 {
     ifstream ifs;
 
-    ifs.open("employee.txt");
+    ifs.open(fileName + ".txt");
     if (!ifs)
     {
         cout << "File Open Error\n";
