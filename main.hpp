@@ -14,7 +14,7 @@ int writeFile(string fileName)
     }
 
     int N;
-    cin >> N;
+    //cin >> N;
     ofs << N << endl;
 	for (int i = 0; i < N; ++i)
 	{
@@ -41,8 +41,10 @@ int readFile(string fileName)
     }
 
     int N;
-	ifs >> N; 
-	for (int i = 0; i < N; ++i)
+	//ifs >> N; 
+
+
+	for (N = 0; ifs.eof(); ++N)
 	{
 		string name, job;
 		int id;
